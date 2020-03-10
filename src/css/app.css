@@ -1,0 +1,436 @@
+/* app global css */
+
+ul {
+	list-style: none;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 33px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 22px;
+    line-height: 37px;
+}
+
+p, .p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.fs-14 {
+	font-size: 14px;
+}
+
+.bs-warning {
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+p.fs-1 ,.fs-1 {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: unset;
+	transition: .5s;
+}
+
+.row {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-group {
+	padding: 4px 16px;
+}
+
+.form-fields {
+	margin: 0 -16px;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ai-start{
+	align-items: flex-start;
+}
+
+/*MARGINS START*/
+	.m-0 {
+		margin: 0;
+	}
+
+	.m-1 {
+		margin: 6px;
+	}
+
+	.m-2 {
+		margin: 10px;
+	}
+
+	.m-3 {
+		margin: 16px;
+	}
+
+	.m-4 {
+		margin: 20px;
+	}
+
+	.m-5 {
+		margin: 32px;
+	}
+
+	.m-a {
+		margin: auto;
+	}
+
+	.ml-0, .mx-0 {
+		margin-left: 0;
+	}
+
+	.ml-1, .mx-1 {
+		margin-left: 6px;
+	}
+
+	.ml-2, .mx-2 {
+		margin-left: 10px;
+	}
+
+	.ml-3, .mx-3 {
+		margin-left: 16px;
+	}
+
+	.ml-4, .mx-4 {
+		margin-left: 20px;
+	}
+
+	.ml-5, .mx-5 {
+		margin-left: 32px;
+	}
+
+	.ml-a, .m-a {
+		margin-left: auto;
+	}
+
+	.mr-0, .mx-0 {
+		margin-right: 0;
+	}
+
+	.mr-1, .mx-1 {
+		margin-right: 6px;
+	}
+
+	.mr-2, .mx-2 {
+		margin-right: 10px;
+	}
+
+	.mr-3, .mx-3 {
+		margin-right: 16px;
+	}
+
+	.mr-4, .mx-4 {
+		margin-right: 20px;
+	}
+
+	.mr-5, .mx-5 {
+		margin-right: 32px;
+	}
+
+	.mr-a, .m-a {
+		margin-right: auto;
+	}
+
+	.mb-0, .my-0 {
+		margin-bottom: 0;
+	}
+
+	.mb-1, .my-1 {
+		margin-bottom: 6px;
+	}
+
+	.mb-2, .my-2 {
+		margin-bottom: 10px;
+	}
+
+	.mb-3, .my-3 {
+		margin-bottom: 16px;
+	}
+
+	.mb-4, .my-4 {
+		margin-bottom: 20px;
+	}
+
+	.mb-5, .my-5 {
+		margin-bottom: 32px;
+	}
+
+	.mb-a, .my-a {
+		margin-bottom: auto;
+	}
+
+	.mt-0, .my-0 {
+		margin-top: 0;
+	}
+
+	.mt-1, .my-1 {
+		margin-top: 6px;
+	}
+
+	.mt-2, .my-2 {
+		margin-top: 10px;
+	}
+
+	.mt-3, .my-3 {
+		margin-top: 16px;
+	}
+
+	.mt-4, .my-4 {
+		margin-top: 20px;
+	}
+
+	.mt-5, .my-5 {
+		margin-top: 32px;
+	}
+
+	.mt-a, .my-a {
+		margin-top: auto;
+	}
+/*MARGINS END*/
+
+/*PADDINGS START*/
+	.p-0 {
+		padding: 0;
+	}
+
+	.p-1 {
+		padding: 6px;
+	}
+
+	.p-2 {
+		padding: 10px;
+	}
+
+	.p-3 {
+		padding: 16px;
+	}
+
+	.p-4 {
+		padding: 20px;
+	}
+
+	.p-5 {
+		padding: 32px;
+	}
+
+	.pr-0, .px-0 {
+		padding-right: 0;
+	}
+
+	.pr-1, .px-1 {
+		padding-right: 6px;
+	}
+
+	.pr-2, .px-2 {
+		padding-right: 10px;
+	}
+
+	.pr-3, .px-3 {
+		padding-right: 16px;
+	}
+
+	.pr-4, .px-4 {
+		padding-right: 20px;
+	}
+
+	.pr-5, .px-5 {
+		padding-right: 32px;
+	}
+
+	.pl-0 , .px-0 {
+		padding-left: 0;
+	}
+
+	.pl-1 , .px-1 {
+		padding-left: 6px;
+	}
+
+	.pl-2 , .px-2 {
+		padding-left: 10px;
+	}
+
+	.pl-3 , .px-3 {
+		padding-left: 16px;
+	}
+
+	.pl-4 , .px-4 {
+		padding-left: 20px;
+	}
+
+	.pl-5 , .px-5 {
+		padding-left: 32px;
+	}
+
+	.pb-0 , .py-0 {
+		padding-bottom: 0;
+	}
+
+	.pb-1 , .py-1 {
+		padding-bottom: 6px;
+	}
+
+	.pb-2 , .py-2 {
+		padding-bottom: 10px;
+	}
+
+	.pb-3 , .py-3 {
+		padding-bottom: 16px;
+	}
+
+	.pb-4 , .py-4 {
+		padding-bottom: 20px;
+	}
+
+	.pb-5 , .py-5 {
+		padding-bottom: 32px !important;
+	}
+
+	.pt-0 , .py-0 {
+		padding-top: 0;
+	}
+
+	.pt-1 , .py-1 {
+		padding-top: 6px;
+	}
+
+	.pt-2 , .py-2 {
+		padding-top: 10px;
+	}
+
+	.pt-3 , .py-3 {
+		padding-top: 16px;
+	}
+
+	.pt-4 , .py-4 {
+		padding-top: 20px;
+	}
+
+	.pt-5 , .py-5 {
+		padding-top: 32px !important;
+	}
+/*PADDINGS END*/
+
+/*BORDER RADIUS START*/
+	.round-0 {
+		border-radius: 0px;
+	}
+
+	.round-1 {
+		border-radius: 4px;
+	}
+
+	.round-2 {
+		border-radius: 6px;
+	}
+	
+	.round-3 {
+		border-radius: 8px;
+	}
+
+	.round-4 {
+		border-radius: 10px;
+	}
+
+	.round-5 {
+		border-radius: 12px;
+	}
+/*BORDER RADIUS END*/
+
+.w-100 {
+	width: 100%;
+}
+
+.no-wrap {
+	flex-wrap: nowrap;
+}
+
+.link {
+	font-size: 18px;
+	display: block;
+}
+
+.link .material-icons {
+	font-size: 24px;
+}
+
+.link-default {
+	color: rgba(0,0,0,.87);
+}
+
+.link-default:hover {
+	color: #3f51b5;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.pos-r {
+	position: relative;
+}
+
+.bg-white {
+	background: white;
+} 
+
+
+/*STYLE FOR WIDTH > 1024 (MD) START*/
+@media (min-width: 1024px) {
+
+	.p-md-4 {
+		padding: 20px;
+	}
+
+	.p-md-5 {
+		padding: 32px;
+	}
+
+	.no-wrap-md {
+		flex-wrap: nowrap;
+	}
+
+	.px-md-5 {
+		padding-right: 32px;	
+		padding-left: 32px;	
+	}
+
+	.px-md-3 {
+		padding-right: 16px;	
+		padding-left: 16px;	
+	}
+
+} 
+/*STYLE FOR WIDTH > 1024 (MD) END*/
+
+/*STYLE FOR WIDTH > 600 (SM) START*/
+@media (min-width: 600px) {
+
+	.no-wrap-sm {
+		flex-wrap: nowrap;
+	}
+
+	.ml-sm-4 {
+		margin-left: 20px;
+	} 
+
+} 
+/*STYLE FOR WIDTH > 600 (SM) END*/
