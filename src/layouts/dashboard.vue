@@ -48,7 +48,8 @@
 
     		<q-expansion-item
     		expand-separator
-    		icon="people"
+    		icon="people" 
+        class="icon-primary"
     		label="Пользователи"
     		>
     			<q-card>
@@ -79,7 +80,7 @@
     			</q-card>
     		</q-expansion-item>
 
-        <q-item clickable>
+        <q-item clickable to="/dashboard/applications/home">
           <q-item-section avatar>
             <q-icon class="text-primary" name="description" />
           </q-item-section>

@@ -21,11 +21,15 @@ const routes = [
     component: () => import('layouts/dashboard.vue'),
     children: [
       { path: '/dashboard', name: 'dashboard', component: () => import('pages/dashboard/index.vue') },
-      { path: '/dashboard/users/add', name: 'users_add', component: () => import('pages/dashboard/users/add.vue')},
-      // { path: '/dashboard/users/:role_id', props:true, name: 'users', component: () => import('pages/dashboard/users/home.vue')},
     ]
   },
-
+  { 
+    path: '/dashboard/applications', 
+    component: () => import('layouts/dashboard.vue'),
+    children: [
+      { path: '/dashboard/applications/home', name: 'applications_home', component: () => import('pages/dashboard/applications/home.vue') },
+    ]
+  },
 ]
 
 // Always leave this as last one

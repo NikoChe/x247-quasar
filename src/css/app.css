@@ -4,6 +4,10 @@ ul {
 	list-style: none;
 }
 
+table {
+	border-collapse: collapse;
+}
+
 h2 {
 	font-size: 26px;
 	line-height: 33px;
@@ -61,8 +65,23 @@ a {
 	justify-content: center;
 }
 
+.flex-center-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;	
+}
+
+.border-default {
+	border: solid 1px #e0e0e0;
+}
+
 .ai-start{
 	align-items: flex-start;
+}
+
+.overflow-a {
+	overflow: auto;
 }
 
 /*MARGINS START*/
@@ -392,6 +411,17 @@ a {
 	background: white;
 } 
 
+.progress-bar {
+	height: 100%;
+}
+
+.progress {
+	border: solid 1px #ccc;
+}
+
+.icon-primary i {
+	color: #027be3;
+}
 
 /*STYLE FOR WIDTH > 1024 (MD) START*/
 @media (min-width: 1024px) {

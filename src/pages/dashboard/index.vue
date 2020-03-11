@@ -1,12 +1,31 @@
 <template>
-	<q-page class="flex-center p-2">
+	<q-page class="flex-center-col p-2">
 		<!-- <div class="row welcome_text"> -->
 			<q-banner class="bg-primary round-3 text-white w-100">
 		      <h1>Добро пожаловать, {{name}}</h1>
-		      <template v-slot:action>
-
-		      </template>
 		    </q-banner>
+		    <q-card flat bordered class="my-card w-100 mt-5">
+		      <q-card-section>
+		        <div class="text-h6">Заявки</div>
+		      </q-card-section>
+
+		      <q-card-section class="q-pt-none overflow-a p-0">
+		      	<table>
+		      		<thead>
+		      			<tr>
+		      				<th v-for="item in applications_column" class="p-1 border-default" v-html="item"></th>
+		      				<th class="border-default p-1"></th>
+		      			</tr>
+		      		</thead>
+		      		<tbody>
+		      			<tr v-for="application in applications">
+		      				<th v-for="item in application" class="p-1 border-default" v-html="item"></th>
+		      				<th class="p-1 border-default"><q-btn class="p-0"><q-icon name="remove_red_eye" class="text-primary" /></q-btn></th>
+		      			</tr>
+		      		</tbody>
+		      	</table>
+		      </q-card-section>
+		    </q-card>
 		<!-- </div> -->
 	</q-page>
 </template>
@@ -17,11 +36,11 @@
 
 	  data () {
 	    return {
-	      phone: '',
 	      name: '',
-	      password: '',
-	      isPwd: true ,
-	      applications: {}
+	      applications: [],
+	      applications_column: ['ID','Создано','Cтатус', 
+	      'Классификатор', 'Проблемное место', 
+	      'Адрес', 'Источник', 'Житель', 'УК/ответственный'] 
 	    }
 	  },
 
@@ -41,6 +60,7 @@
 			}
 		).then(function(response){
 			console.log(response);
+			self.applications = response.data.applications;
 		}).catch(function(){
 			// self.$router.push({name:'login'});
 		});
